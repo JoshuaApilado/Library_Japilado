@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome, <span id="username">Guest</span>!</h1>
+        </header>
+        <div class="options">
+            <button onclick="location.href='/library/public/createauthor/createauthor.html'">Create author</button>
+            <button onclick="location.href='/library/public/editbook2/edit.html'">Edit Book Information</button>
+            <button onclick="location.href='/library/public/createbook/createbook.html'">Create Book</button>
+            <button onclick="location.href='/library/public/totalinformation/totalinfo.html'">Show Collections</button>
+        </div>
+    </div>
+
+    <script>
+        // Get the username from the cookie or session storage
+        const username = localStorage.getItem('username') || 'Guest';
+        document.getElementById('username').textContent = username;
+    </script>
+</body>
+</html>

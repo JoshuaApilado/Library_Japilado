@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="editauthor.css">
+</head>
+<body>
+    <h1 class="title">Library Books </h1>
+    <div id="author-list"> </div>
+
+    <!-- Update author Modal -->
+
+    <div id="update-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Update author</h2>
+            <form id="update-form">
+                <label for="title">Title:</label>
+                <input type="text" id="author-title" name="name" required>
+
+                <label for="author">Author ID:</label>
+                <input type="text" id="author-id" name="authorid" required>
+
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="editauthor.js"></script>
+</body>
+</html>

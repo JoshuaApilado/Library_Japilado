@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Library</title>
+    <link rel="stylesheet" href="loginform.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Library Login</h2>
+            <form id="loginForm">
+                <div class="textbox">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div id="error-message" class="error"></div>
+            </form>
+            <div id="message" class="message" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <script src="ylogin.js"></script>
+</body>
+</html>

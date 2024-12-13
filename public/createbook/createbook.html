@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Book</title>
+    <link rel="stylesheet" href="createbook.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Register New Book</h2>
+            <form id="registerBookForm">
+                <div class="input-group">
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter book title" required>
+                </div>
+                <button type="submit" class="btn">Register Book</button>
+                <p id="error-message" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="createbook.js"></script>
+</body>
+</html>

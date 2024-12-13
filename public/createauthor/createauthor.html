@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Registration</title>
+    <link rel="stylesheet" href="author2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Author Registration</h1>
+            <div class="user-info">
+                <p>Logged in as: <span id="logged-in-user"></span></p>
+            </div>
+        </header>
+
+        <div class="form-container">
+            <form id="authorForm">
+                <label for="name">Author Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter the author's name" required />
+
+                <button type="submit">Register Author</button>
+            </form>
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </div>
+
+    <script src="createauthor.js"></script>
+</body>
+</html>
